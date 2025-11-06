@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/myriad-pro');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .font-poppins {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .font-inter {
+        font-family: 'Inter', sans-serif;
+    }
+
+    .font-myriad {
+        font-family: 'Myriad Pro', sans-serif;
+    }
+
+    .bg-linear {
+        background: linear-gradient(0deg, #FFFFFF 0%,
+                rgba(255, 255, 255, 0) 98.33%);
+    }
+
+    .card-shadow {
+        box-shadow: 0px 4px 40px 0px #9090901A;
+    }
+
+    .pop-shadow {
+        box-shadow: 0px 4px 40px 0px #0000001A;
+    }
+
+    .chart-shadow {
+        box-shadow: 0px 4px 40px 0px #90909066;
+    }
+
+    /* Tooltip */
+    .tooltip-container {
+        position: relative;
+        display: inline-block;
+    }
+
+    .tooltip-text {
+        visibility: hidden;
+        text-align: center;
+        padding: 12px;
+        border-radius: 8px;
+        font-size: 12px;
+        font-weight: 500;
+        position: absolute;
+        z-index: 1;
+        top: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .tooltip-container:hover .tooltip-text {
+        visibility: visible;
+    }
+
+    /* Hide Scroll */
+    .hide-scroll::-webkit-scrollbar {
+        display: none;
+    }
+
+    .invert-img:hover img {
+        filter: invert(100%);
+    }
+
+    .invert-selected img {
+        filter: invert(100%);
+    }
+
+    @media (max-width: 768px) {
+        .mobile-only-content {
+            display: none;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .content {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .content {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .left-only {
+            left: 0.5rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .mobile-relative {
+            position: relative;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .mobile-center {
+            justify-content: center;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .hidden-mobile {
+            display: none;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .flex-mobile {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    .element {
+        transition: transform 100ms ease-in-out;
+    }
+
+    .element:active {
+        transform: translate(-200px, 0px);
+    }
+
+    .contact .PhoneInputInput {
+        outline: none !important;
+        height: 4rem;
+    }
+
+    .contact .PhoneInputCountryIcon {
+        width: calc(2em * 1.5) !important;
+        height: 2em !important;
+    }
+
+    .contact .PhoneInputCountryIcon--square {
+        width: 2em !important;
+    }
+    .bg-gradient-radial {
+        background: radial-gradient(circle at bottom right, rgba(0, 0, 0, 0.5), transparent);
+    }
+    .text-shadow {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    }
+}
